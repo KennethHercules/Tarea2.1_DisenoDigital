@@ -27,13 +27,13 @@ Para iniciar el servidor y probar la API, usar: npm run dev
 El servidor estará corriendo en http://localhost:3000
 
 ## Rutas disponibles y su funcionalidad
-Método	        Ruta	                Función
-GET	            /productos	            Listar todos los productos
-GET	            /productos/:id	        Obtener un producto por su ID
-GET	            /productos/disponibles	Listar únicamente los productos disponibles
-POST	        /productos	            Crear un nuevo producto (JSON: nombre, precio, descripcion, disponible)
-PUT	            /productos/:id	        Actualizar un producto existente por ID
-DELETE	        /productos/:id	        Eliminar un producto por su ID
+Método	        Ruta	                  Función
+GET	            /productos	            Listar todos los productos.
+GET	            /productos/:id	        Obtener un producto por su ID.
+GET	            /productos/disponibles	Listar únicamente los productos disponibles.
+POST	          /productos	            Crear un nuevo producto (JSON: nombre, precio, descripcion, disponible).
+PUT	            /productos/:id	        Actualizar un producto existente por ID.
+DELETE	        /productos/:id	        Eliminar un producto por su ID.
 
 ## Notas
 
