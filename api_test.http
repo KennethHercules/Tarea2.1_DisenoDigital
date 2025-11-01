@@ -1,0 +1,44 @@
+### Listar todos
+GET http://localhost:3000/productos
+
+### Listar disponibles
+GET http://localhost:3000/productos/disponibles
+
+### Crear producto (válido)
+POST http://localhost:3000/productos
+Content-Type: application/json
+
+{
+  "nombre": "Gorra",
+  "precio": 250,
+  "descripcion": "Gorra talla S, muy fachera",
+  "disponible": true
+}
+
+### Crear producto (inválido - descripcion corta)
+POST http://localhost:3000/productos
+Content-Type: application/json
+
+{
+  "nombre": "Prueba",
+  "precio": 10,
+  "descripcion": "corta",
+  "disponible": true
+}
+
+### Obtener por id (ej: 1)
+GET http://localhost:3000/productos/1
+
+### Actualizar producto 1
+PUT http://localhost:3000/productos/1
+Content-Type: application/json
+
+{
+  "nombre": "Camiseta nueva",
+  "precio": 329,
+  "descripcion": "Camiseta actualizada con buen diseño y calidad",
+  "disponible": false
+}
+
+### Eliminar producto 1
+DELETE http://localhost:3000/productos/1
